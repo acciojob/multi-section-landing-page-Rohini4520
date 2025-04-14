@@ -5,9 +5,33 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
+<title>contact form</title>
 <body>
 	<!-- the entire body must be written by student -->
+	<form>
+		<h2>Contact Us</h2>
+		<div class="container">
+			<label for="Full name"> full name* </label>
+			<input type = "text" id="fullname" name="full name" required aria-required="true"/>
+			  <div class="error" id="fullNameError"></div><br>
+
+			<label for="Email" > Email*</label>
+			<input type="email" id="email" name="email" required aria-required="true"/>
+			<div class= "error" id="EmailError"></div>
+
+    <label for="phoneno" > phone no(optional)</label>
+	<input type="tel" id="phone" name="phone" pattern="^(\+?\d{1,3}[- ]?)?\d{10}$" />
+      <div class="error" id="phoneError"></div>
+
+			<label for="message">Message *</label>
+      <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+      <div class="error" id="messageError"></div>
+
+      <button type="submit">Submit</button>
+    
+	</form>
+</div>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
